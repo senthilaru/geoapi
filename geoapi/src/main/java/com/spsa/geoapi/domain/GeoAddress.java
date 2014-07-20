@@ -19,4 +19,40 @@ public class GeoAddress {
 	@JsonProperty("asn") private String asn;
 	@JsonProperty("longitude") private Double longitude;
 	@JsonProperty("latitude") private Double latitude;
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("GeoAddress [dma_code=");
+		builder.append(dma_code);
+		builder.append(", region=");
+		builder.append(region);
+		builder.append(", continent_code=");
+		builder.append(continent_code);
+		builder.append(", area_code=");
+		builder.append(area_code);
+		builder.append(", isp=");
+		builder.append(isp);
+		builder.append(", country_code=");
+		builder.append(country_code);
+		builder.append(", country=");
+		builder.append(country);
+		builder.append(", ip=");
+		builder.append(ip);
+		builder.append(", city=");
+		builder.append(city);
+		builder.append(", timezone=");
+		builder.append(timezone);
+		builder.append(", region_code=");
+		builder.append(region_code);
+		builder.append(", country_code3=");
+		builder.append(country_code3);
+		builder.append(", asn=");
+		builder.append(asn);
+		builder.append(", longitude=");
+		builder.append(longitude);
+		builder.append(", latitude=");
+		builder.append(latitude);
+		builder.append("]");
+		return builder.toString();
+	}
 }
