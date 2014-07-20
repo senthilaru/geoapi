@@ -8,4 +8,10 @@ It can be easily integrated into any java program.
 
 How to integrate?
   1. Download the latest jar file and use it.
-  2. Or Use the provided dependency in the pom file.
+
+How to use?
+  Just two lines of coding.,
+* GeoApiService service = new GeoApiServiceImpl();
+* GeoAddress address = service.getAddressByIp("98.228.255.100");
+* System.out.println("address;"+address);
+
